@@ -3,7 +3,7 @@ import os
 
 nama_file_video = input("Masukkan nama file video (format MP4): ")
 
-if not os.path.exists():
+if not os.path.exists(nama_file_video):
     print(f"Kesalahan: File video '{nama_file_video}' tidak ditemukan.")
     sys.exit(1)
 
