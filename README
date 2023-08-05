@@ -1,5 +1,3 @@
-Ditulis oleh Rofi pada Minggu, 6 Agustus 2023
-
 KVMA     
 ----------------------------
 
@@ -8,7 +6,7 @@ KVMA adalah program sederhana Python3 yang dibuat untuk melakukan konversi file 
 Instalasi
 ----------------------------
 
-- Instalasi di Termux (Android)
+* Instalasi di Termux (Android)
 
   # pkg update
   # pkg install python3
@@ -18,7 +16,7 @@ Instalasi
   # cd KVMA
   # python3 main.py
 
-  - Instalasi di Kali Linux
+* Instalasi di Kali Linux
 
   # apt-get update
   # apt-get install python3-pip
