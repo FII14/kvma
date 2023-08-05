@@ -25,11 +25,11 @@ if os.path.exists(nama_file_audio):
         exit()
 
 try:
-    print("\n[*] Sedang melakukan konversi...\n")
+    print("\n[*] Sedang melakukan konversi...")
     devnull = open(os.devnull, 'w')
     subprocess.run(['ffmpeg', '-i', nama_file_video, '-vn', '-acodec', 'libmp3lame', '-q:a', '4', nama_file_audio], stdout=devnull, stderr=devnull)
     devnull.close()
-    print(f"Konversi selesai: {nama_file_video} menjadi {nama_file_audio}")
+    print(f"\nKonversi selesai: {nama_file_video} menjadi {nama_file_audio}")
 
 except Exception as e:
     print(f"Terjadi kesalahan: {e}")
