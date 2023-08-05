@@ -1,0 +1,27 @@
+KVMA     
+----------------------------
+
+KVMA adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan untuk mengkonversi file video (MP4) menjadi file audio (MP3).
+
+ Instalasi
+----------------------------
+
+- Instalasi di Termux (Android)
+
+  # pkg update
+  # pkg install python3
+  # pkg install git
+  # pkg install ffmpeg
+  # git clone https://github.com/FII14/KVMA
+  # cd KVMA
+  # python3 main.py
+
+  - Instalasi di Kali Linux
+
+  # apt-get update
+  # apt-get install python3-pip
+  # apt-get install git
+  # apt-get install ffmpeg
+  # git clone https://github.com/FII14/KVMA
+  # cd KVMA
+  # python3 main.py
