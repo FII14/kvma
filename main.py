@@ -18,14 +18,17 @@ if not os.path.exists(nama_file_video):
 nama_file_audio = input("Masukkan nama file audio (format MP3): ")
 
 if os.path.exists(nama_file_audio):
-    pilihan = input("File audio '{nama_file_audio}' sudah ada. Apakah Anda ingin menimpa file yang ada? (iya/tidak): ")
+    pilihan = input(f"File audio '{nama_file_audio}' sudah ada. Apakah Anda ingin menimpa file yang ada? (iya/tidak): ")
     
     if pilihan.lower() != 'iya':
         print("Konversi dibatalkan.")
         exit()
 
 try:
-    subprocess.run(['ffmpeg', '-i', nama_file_video, '-vn', '-acodec', 'libmp3lame', '-q:a', '4', nama_file_audio])
+    print("\n[*] Sedang melakukan konversi...\n")
+    devnull = open(os.devnull, 'w')
+    subprocess.run(['ffmpeg', '-i', nama_file_video, '-vn', '-acodec', 'libmp3lame', '-q:a', '4', nama_file_audio], stdout=devnull, stderr=devnull)
+    devnull.close()
     print(f"Konversi selesai: {nama_file_video} menjadi {nama_file_audio}")
 
 except Exception as e:
