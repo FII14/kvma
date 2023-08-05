@@ -1,7 +1,7 @@
 KVMA     
 ----------------------------
 
-KVMA adalah sebuah program sederhana yang ditulis dalam Python3 yang bertujuan untuk mengkonversi file video (MP4) menjadi file audio (MP3).
+KVMA merupakan sebuah program sederhana yang dikodekan dengan menggunakan bahasa pemrograman Python 3. Fungsinya adalah untuk melakukan proses konversi file video dengan format MP4 menjadi file audio dengan format MP3. 
 
  Instalasi
 ----------------------------
