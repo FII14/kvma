@@ -1,6 +1,14 @@
 import subprocess
 import os
 
+print("""
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ Program : Konversi Video Menjadi Audio  @
+@ Pembuat : Rofi [FII14]                  @
+@ GitHub  : https://github.com/FII14/KVMA @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+""")
+
 nama_file_video = input("Masukkan nama file video (format MP4): ")
 
 if not os.path.exists(nama_file_video):
