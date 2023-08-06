@@ -34,7 +34,7 @@ try:
     devnull.close()
     print(f"[*] Konversi selesai.")
     
-    folder_hasil = "hasil"
+    folder_hasil = "hasil_konversi"
     
     if not os.path.exists(folder_hasil):
         os.makedirs(folder_hasil)
