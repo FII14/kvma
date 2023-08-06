@@ -22,7 +22,7 @@ if os.path.exists(nama_file_audio):
     
     if pilihan.lower() != 'iya':
         print("Konversi dibatalkan.")
-        exit()
+        sys.exit(1)
 
 try:
     print("\n[*] Sedang melakukan konversi...")
@@ -30,6 +30,8 @@ try:
     subprocess.run(['ffmpeg', '-i', nama_file_video, '-vn', '-acodec', 'libmp3lame', '-q:a', '4', nama_file_audio], stdout=devnull, stderr=devnull)
     devnull.close()
     print(f"\nKonversi selesai: {nama_file_video} menjadi {nama_file_audio}")
-
+    sys.exit(0)
+    
 except Exception as e:
     print(f"Terjadi kesalahan: {e}")
+    sys.exit(1)
