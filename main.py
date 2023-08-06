@@ -3,6 +3,8 @@
 import os
 import sys
 
+os.system("clear")
+
 print("""
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Program : Konversi Video Menjadi Audio  @
